@@ -1,0 +1,52 @@
+@import "_fronts.scss";
+
+@mixin submit-default($width,$height) {
+    position: absolute;
+    width: $width;
+    height: $height;
+    background: #b2d234;
+    box-shadow: 0px 2px 4px rgba(115, 115, 115, 0.5);
+    border-radius: 6px;
+    border: none;
+} 
+@mixin cancel-default($width,$height) {
+    position: absolute;
+    width: $width;
+    height: $height;
+    background: #f8f8f8;
+    border: none;
+}
+@mixin delete-default($width,$height){
+    position: absolute;
+    width: $width;
+    height: $height;
+    background: #eb5151;
+    box-shadow: 0px 2px 4px rgba(115, 115, 115, 0.5);
+    border-radius: 6px;
+    border: none;
+
+}
+
+.btn-submit{
+    @include submit-default(104.29px,34.01px);
+    left: 225px;
+    top: 14px;
+    label {
+        @include front-default(16px,22px,1,rgb(116, 116, 116));
+        position: absolute;
+        left: 28px;
+        top: 6px; 
+    }
+}  
+
+.btn-cancle{
+    @include cancel-default(104.29px,34.01px);
+    left: 225px;
+    top: 14px;
+    label {
+        @include front-default(16px,22px,1,rgb(116, 116, 116));
+        position: absolute;
+        left: 28px;
+        top: 6px; 
+    }
+}  

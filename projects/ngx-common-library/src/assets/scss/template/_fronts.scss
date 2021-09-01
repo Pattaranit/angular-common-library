@@ -1,0 +1,19 @@
+@mixin front-default($size,$lineheight,$opacity,$color) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $size;
+    line-height: $lineheight;
+    opacity: $opacity;
+    color: $color;
+} 
+.active-true-color {
+    @include front-default(14px,19px,1,rgb(93, 191, 183));
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.active-false-color {
+    @include front-default(14px,19px,1,rgb(55, 59, 58));
+    margin-left: 10px;
+    margin-top: 2px;
+}

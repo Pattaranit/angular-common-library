@@ -1,0 +1,9 @@
+<!-- <div id = "button">
+    <button type="button" class= "btn-submit" (click)="onClickCommonButton($event)" >{{label}}</button>
+</div> -->
+
+<button type="button"
+        [ngStyle]="buttonConfig.styles"
+        (click)="onClickCommonButton($event)">
+    {{ buttonConfig.text }}
+</button>
